@@ -1,6 +1,6 @@
 import httpx, json, re
 from typing import Any, Dict
-from backend.config import (
+from config import (
     OPENROUTER_API_KEY, OPENROUTER_MODEL, OPENROUTER_URL,
     OPENROUTER_REFERER, OPENROUTER_TITLE
 )

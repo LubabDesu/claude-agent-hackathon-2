@@ -6,10 +6,10 @@ from claude_agent_sdk import ClaudeSDKClient, ClaudeAgentOptions
 
 
 from schema import AnalyzeRequest, AnalyzeResponse
-from backend.prompts import SYSTEM_PROMPT, user_payload_to_prompt
-from backend.config import CLAUDE_API_KEY, MODEL_NAME, OPENROUTER_MODEL
+from prompts import SYSTEM_PROMPT, user_payload_to_prompt
+from config import CLAUDE_API_KEY, MODEL_NAME, OPENROUTER_MODEL
 from utils import extract_json
-from backend.openrouter_client import chat_completion
+from openrouter_client import chat_completion
 
 import logging 
 import json
