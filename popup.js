@@ -252,3 +252,18 @@ function esc(s) {
         .replace(/>/g, "&gt;")
         .replace(/"/g, "&quot;");
 }
+
+function setStatus(text, loading = false) {
+  const status = document.getElementById("status");
+  status.textContent = text;
+  if (loading) {
+    status.innerHTML = `<span class="dots">${text}</span>`;
+    let dots = 0;
+    const interval = setInterval(() => {
+      dots = (dots + 1) % 4;
+      status.querySelector(".dots").textContent = text + ".".repeat(dots);
+    }, 400);
+    return () => clearInterval(interval);
+  }
+}
+
