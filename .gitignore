@@ -1,0 +1,58 @@
+# =========================================
+# Global ignores
+# =========================================
+.DS_Store
+*.log
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.eggs/
+*.sqlite3
+*.db
+
+# Node / Frontend
+node_modules/
+dist/
+build/
+.env.local
+.env.production
+.env.development
+.vscode/
+.idea/
+
+# =========================================
+# Python backend
+# =========================================
+# Virtual environments
+venv/
+.env/
+.venv/
+env/
+ENV/
+venv.bak/
+
+# Compiled / cache files
+*.pyc
+__pycache__/
+
+# Environment and config
+.env
+config.json
+secrets.json
+
+# =========================================
+# Chrome Extension
+# =========================================
+# Chrome packaging
+*.crx
+*.pem
+*.zip
+
+# =========================================
+# OS & editor cruft
+# =========================================
+Thumbs.db
+ehthumbs.db
+desktop.ini
